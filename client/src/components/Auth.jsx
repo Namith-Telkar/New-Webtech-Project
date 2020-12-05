@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import loginImg from "./images/Polls Image.jpg"
 
 import { authUser, logout } from '../store/actions';
 
@@ -32,6 +33,7 @@ class Auth extends Component {
     return (
       <div>
         <form className="form" onSubmit={this.handleSubmit}>
+        <img className="image" src={loginImg} alt="Polls"/>
           <label className="form-label" htmlFor="username">
             username{' '}
           </label>

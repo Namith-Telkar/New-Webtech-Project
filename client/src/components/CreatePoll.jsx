@@ -1,9 +1,12 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment} from 'react';
 import { connect } from 'react-redux';
+import { Link } from "react-router-dom";
 
 import { createPoll } from '../store/actions';
 
+
 class CreatePoll extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -67,9 +70,10 @@ class CreatePoll extends Component {
           <button className="button" type="button" onClick={this.addAnswer}>
             Add options
           </button>
-          <button className="button" type="submit">
-            Submit
-          </button>
+          <Link to="/"><button className="button" type="submit">
+                Submit
+                </button>
+          </Link>
         </div>
       </form>
     );

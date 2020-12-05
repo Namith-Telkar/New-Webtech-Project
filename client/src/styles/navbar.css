@@ -4,10 +4,12 @@
 }
 
 .navbar-brand {
-  background-color: black;
-  color:#00E6E6;
+  background-color:white;
+  color:black;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 2rem;
+  padding-bottom: 1.2rem;
+  font-size: 22px;
   border-radius: 0.5rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -23,15 +25,33 @@
 .navbar-item {
   color:black;
   border-style: solid;
-  border-radius: 0.5rem;
-  padding: 0.2rem;
+  border-radius: 1rem;
+  padding: 0.4rem;
   text-decoration: none;
   cursor: pointer;
   font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
 }
 
 .navbar-user {
   margin-top: 0.5rem;
   text-align: right;
   color: black;
+}
+
+.navbar-item-lr{
+  color:black;
+  border-style: solid;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 20px;
+}
+
+.navbar-item-lr:focus{
+  background-color:white;
+  font-size: 22px;
+  padding: 0.5rem;
 }

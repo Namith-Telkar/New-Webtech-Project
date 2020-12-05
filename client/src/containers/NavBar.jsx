@@ -8,20 +8,20 @@ const Navbar = ({ auth, logout }) => (
   <nav className="navbar">
     <div className="container">
       <ul className="navbar-container">
-        <li>
-          <Link className="navbar-brand" to="/">
-            Poll app
-          </Link>
-        </li>
         {!auth.isAuthenticated && (
           <Fragment>
             <li>
-              <Link className="navbar-item" to="/register">
+              <Link className="navbar-item-lr" to="/register">
                 Register
               </Link>
             </li>
             <li>
-              <Link className="navbar-item" to="/login">
+              <Link className="navbar-brand" to="/">
+                Polls Page
+              </Link>
+            </li>
+            <li>
+              <Link className="navbar-item-lr" to="/login">
                 Login
               </Link>
             </li>
@@ -30,12 +30,17 @@ const Navbar = ({ auth, logout }) => (
         {auth.isAuthenticated && (
           <Fragment>
             <li>
-              <Link className="navbar-item" to="/poll/new">
+              <Link className="navbar-item" to="/poll/new" onSelect>
                 New Poll
               </Link>
             </li>
             <li>
-              <a className="navbar-item" onClick={logout}>
+              <Link className="navbar-brand" to="/">
+                Polls Page
+              </Link>
+            </li>
+            <li>
+              <a className="navbar-item" onClick={logout} onSelect>
                 Logout
               </a>
             </li>

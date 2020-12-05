@@ -2,8 +2,9 @@
   background-color:white;
   border-style: solid;
   border-radius: 0.5rem;
+  box-sizing: border-box;
   color:black;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: 'Advent Pro', sans-serif;
   margin: 2rem;
   padding: 0.4rem 2rem;
@@ -17,4 +18,10 @@
 .buttons_center {
   display: flex;
   justify-content: center;
+}
+
+.button:focus{
+  border-color: black;
+  border-width: 3px;
+  font-size: 1.2rem;
 }
